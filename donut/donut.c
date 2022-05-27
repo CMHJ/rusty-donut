@@ -1,3 +1,4 @@
+// Copyright 2020 <seyonechithrananda>
 #define _XOPEN_SOURCE 600
 #define _POSIX_C_SOURCE 200112L
 #define _DEFAULT_SOURCE
@@ -16,7 +17,6 @@ int main() {
   char b[1760];
   printf("\x1b[2J");
   for (;;) {
-
     memset(b, 32, 1760);
     memset(z, 0, 7040);
 
