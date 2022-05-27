@@ -64,3 +64,6 @@ fn main() {
         thread::sleep(loop_period);
     }
 }
+
+#[cfg(test)]
+mod test;
