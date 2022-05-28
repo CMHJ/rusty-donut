@@ -3,6 +3,10 @@ name = "rusty-donut"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
+[profile.release]
+# Optimisations for binary size
+strip = true  # Automatically strip symbols from the binary
+opt-level = "z"  # Optimize for size
+lto = true  # Enable Link Time Optimisation which can reduce size
+codegen-units = 1  # Reduce Parallel Code Generation Units to Increase Optimization
+panic = "abort"  # Removes unwinding code reducing binary size
