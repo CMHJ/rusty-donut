@@ -15,3 +15,5 @@ jobs:
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_RUST_2021: true
+          FILTER_REGEX_EXCLUDE: donut/.*
