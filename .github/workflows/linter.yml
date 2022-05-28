@@ -1,10 +1,13 @@
 name: Super-Linter
 
-on: push
+on:
+  pull_request:
+    branches:
+      - master
 
 jobs:
   super-lint:
-    name: Lint code base
+    name: lint code base
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
