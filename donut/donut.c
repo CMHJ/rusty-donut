@@ -1,4 +1,3 @@
-// Copyright 2020 <seyonechithrananda>
 #define _XOPEN_SOURCE 600
 #define _POSIX_C_SOURCE 200112L
 #define _DEFAULT_SOURCE
