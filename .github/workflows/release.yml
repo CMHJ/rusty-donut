@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
-        run: cargo build --verbose
+        run: cargo build --release --verbose
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
