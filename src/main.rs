@@ -1,3 +1,4 @@
+/// Adding comment
 use std::{thread, time};
 
 fn main() {
