@@ -57,8 +57,8 @@ fn main() {
         for k in 0..=1760 {
             let c: char = if (k % 80) != 0 { b[k] } else { '\n' };
             print!("{c}");
-            a_cap += 0.00004;
-            b_cap += 0.00002;
+            a_cap = (a_cap + 0.00004) % 6.28319;
+            b_cap = (b_cap + 0.00002) % 6.28319;
         }
 
         let loop_period = time::Duration::from_micros(30000);
